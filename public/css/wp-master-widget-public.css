@@ -1,0 +1,8 @@
+/*
+ * Reset for widget generated basic elements
+ */ 
+.wpmw-section-image .wpmw-image-wrapper a {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}

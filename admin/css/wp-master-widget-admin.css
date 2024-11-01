@@ -1,0 +1,244 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file. 
+ */
+div.wpmw-modal{
+	display: none; /* Hidden by default */
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	min-height: 360px;
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+	z-index: 159900;
+}
+div.wpmw-modal-container{
+	position: fixed; /* Stay in place */
+	z-index: 1000100!important;
+	top: 30px;
+	left: 30px;
+	right: 30px;
+	bottom: 30px;
+	overflow: auto; /* Enable scroll if needed */
+}
+div.wpmw-modal-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	min-height: 300px;
+	-webkit-box-shadow: 0 5px 15px rgba(0,0,0,.7);
+	box-shadow: 0 5px 15px rgba(0,0,0,.7);
+	background: #fcfcfc;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+div.wpmw-modal-header {
+	padding: 0 16px;
+	background-color: #797373;
+	color: #fff;
+	width: 100%;
+	box-sizing: border-box;
+}
+h2.wpmw-modal-title{
+	color: #fff;
+	display:inline-block;
+}
+span.wpmw-modal-close{
+	display: inline-block;
+	color: #fff;
+	float: right;
+	font-size: 22px;
+	padding: 15px 10px;
+}
+span.wpmw-modal-close:hover{
+	cursor:pointer;
+}
+.fa-icon-container {
+	display: inline-block;
+	width: 23%;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 35px;
+	box-sizing: border-box;
+	padding: 0px 10px;
+}
+.fa-icon-container:hover {
+	background-color: gold;
+	border-radius: 5px;
+	cursor:pointer;
+}
+span.wpmw-fa-icon{
+	width:100%;
+	display:block;
+}
+div.wpmw-font-awesome-container{
+	padding:30px;
+}
+div.wpmw-container {
+	margin: 0 0 10px 0;
+}
+
+div.wpmw-widgets {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 1em;
+	border: 2px dashed #d4d1d1;
+	padding: 5px;
+	border-radius: 2px;
+	min-height:25px;
+}
+div.wpmw-widgets h3.wpmw-widget-header .ui-accordion-header-icon {
+	position:relative;
+	left:auto;
+	margin:0;
+}
+.wpmw-widget-panel .wpmw-widget-option input[type="text"], .wpmw-widget-panel .wpmw-widget-option input[type="number"], .wpmw-widget-panel .wpmw-widget-option select, .wpmw-widget-panel .wpmw-widget-option textarea, .wpmw-widget-panel .wpmw-widget-option button {
+	font-size: 12px;
+}
+i.fa{
+	font-family: FontAwesome;
+}
+i.fa.fa-bars.wpmw-control-move {
+	float: left;
+	margin-right: 4px;
+	font-size: 20px;
+	line-height: 20px;
+	color:#5e5e5e;
+}
+i.fa.fa-window-close.wpmw-control-remove {
+	float: right;
+	font-size: 20px;
+	line-height: 20px;
+	color: red;
+}
+.ui-accordion-header-active i.fa.fa-window-close.wpmw-control-remove {
+	color:#fff;
+}
+.ui-accordion .wpmw-widget-settings.ui-accordion-content {
+	padding: 15px 10px;
+	background-color:#efefef;
+}
+h3.wpmw-widget-header{
+	text-transform:capitalize;
+}
+input.wpmw-widget-content, input.wpmw-widget-link-url {
+	width:100%;
+}
+label.wpmw-widget-label {
+	display: block;
+	width: 100%;
+	margin: 0 0 5px 0;
+	font-weight: bold;
+}
+.wpmw-controls {
+	margin: 10px 0;
+}
+.wpmw-widget-button {
+	color: #555;
+	padding: 0 10px;
+	display: inline-block;
+	margin: 0 5px 5px 0;
+	background-color: #f7f7f7;
+	border-radius: 3px;
+	border-color: #ccc;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 13px;
+	line-height: 26px;
+	cursor: pointer;
+	min-width: 70px;
+	text-align: center;    
+	-webkit-box-shadow: 0 1px 0 #ccc;
+	box-shadow: 0 1px 0 #ccc;
+	vertical-align: top;
+}
+.wpmw-widget-image-control-button, .wpmw-widget-icon-control-button {
+	color: #555;
+	padding: 0 10px;
+	display: inline-block;
+	margin: 0 5px 5px 0;
+	background-color: #f7f7f7;
+	border-radius: 3px;
+	border-color: #ccc;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 13px;
+	line-height: 26px;
+	cursor: pointer;
+	min-width: 70px;
+	text-align: center;
+	-webkit-box-shadow: 0 1px 0 #ccc;
+	box-shadow: 0 1px 0 #ccc;
+	vertical-align: top;
+}
+.wpmw-widget-image-control-button.wpmw-widget-image-add, .wpmw-widget-icon-control-button.wpmw-widget-icon-add {
+	background-color: #0088ba;
+	color: white;
+}
+.wpmw-widget-image-control-button.wpmw-widget-image-remove, .wpmw-widget-icon-control-button.wpmw-widget-icon-remove {
+	background-color: #b63030;
+	color: white;
+}
+.wpmw-widget-button:hover {
+	color: #000;
+	background-color: #fafafa;
+}
+.wpmw-widget-option {
+	display: block;
+	padding: 15px 0;
+	width: 100%;
+	border-top: dashed 1px #c6c6c6;
+}
+p.wpmw-widget-option-desc {
+	margin: 0;
+	font-size: 12px;
+}
+label.wpmw-widget-radio {
+	margin-right: 10px;
+}
+label.wpmw-widget-inline {
+	display: inline-block;
+}
+.wpmw-widget-textarea{
+	width:100%;
+}
+.wpmw-widget-block {
+  display: block;
+}
+.wpmw-widget-font-size, .wpmw-widget-margin {
+	width: 60px;
+}
+
+.wpmw-widget-image-preview, .wpmw-widget-icon-preview {
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px dashed #000;
+	text-align: center;
+}
+.wpmw-widget-icon-preview i{
+	font-size: 30px;
+}
+span.wpmw-widget-image-label {
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+.wpmw-widget-image-preview img {
+	width:100%;
+}
+label.wpmw-widget-inline.wpmw-option-series {
+	width: 24%;
+	min-width: 80px;
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+label.wpmw-widget-inline.wpmw-option-series .wpmw-widget-block {
+	font-size:10px;
+	margin-left:1px;
+}
+label.wpmw-widget-inline.wpmw-option-series input{
+	width:100%;
+}
